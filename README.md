@@ -52,8 +52,12 @@ Greenstone Website/
 ├── assets/
 │   ├── css/style.css        # Global styles
 │   ├── js/main.js           # Theme toggle, nav, scroll reveal
-│   └── images/               # Logos, icons, team photos
-├── favicon.ico / favicon.svg / apple-touch-icon.png
+│   └── images/
+│       ├── logo.png          # Full wordmark logo
+│       ├── logo-mark.png     # Standalone "G" mark (source asset)
+│       ├── icon.png / icon-512.png
+│       ├── team/              # Employee headshots
+│       └── favicons/          # favicon.ico/.svg, apple-touch-icon, web app manifest icons
 ├── site.webmanifest
 ├── sitemap.xml
 ├── robots.txt
