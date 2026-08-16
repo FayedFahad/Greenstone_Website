@@ -73,11 +73,6 @@
   progress.setAttribute("aria-hidden", "true");
   body.appendChild(progress);
 
-  var transition = document.createElement("div");
-  transition.className = "page-transition";
-  transition.setAttribute("aria-hidden", "true");
-  body.appendChild(transition);
-
   var backTop = document.createElement("button");
   backTop.className = "back-to-top";
   backTop.type = "button";
@@ -324,7 +319,7 @@
         if (url.pathname === window.location.pathname && url.hash) return;
         e.preventDefault();
         body.classList.add("is-leaving");
-        window.setTimeout(function () { window.location.href = url.href; }, 285);
+        window.setTimeout(function () { window.location.href = url.href; }, 200);
       });
     });
   }

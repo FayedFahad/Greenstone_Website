@@ -741,20 +741,10 @@ body {
   transition: width 80ms linear;
 }
 
-/* soft page transition veil */
-.page-transition {
-  position: fixed;
-  inset: 0;
-  z-index: 2000;
-  pointer-events: none;
-  opacity: 0;
-  transform: translateY(100%);
-  background:
-    radial-gradient(700px 460px at 20% 30%, rgba(110,188,32,.32), transparent 65%),
-    linear-gradient(145deg, #121812, #1f321c);
-  transition: transform 360ms var(--ease-out), opacity 280ms ease;
-}
-body.is-leaving .page-transition { opacity: 1; transform: translateY(0); }
+/* simple page transition: fade the outgoing page out */
+.page-transition { display: none; }
+body { opacity: 1; transition: opacity 200ms ease; }
+body.is-leaving { opacity: 0; }
 
 /* navbar depth while scrolling */
 .navbar {
@@ -1317,7 +1307,7 @@ body.is-leaving .page-transition { opacity: 1; transform: translateY(0); }
 
 @media (prefers-reduced-motion: reduce) {
   .cursor-glow,.hero-particles,.hero-grid,.tech-chip,.scroll-progress { display:none !important; }
-  .page-transition { transition:none !important; }
+  body { transition:none !important; }
   .motion-ready .hero * { animation:none !important; }
   :root[data-theme="light"] .hero-stats .stat::before { animation:none !important; display:none; }
   :root[data-theme="light"] .hero-visual .glass-card-dark { animation:none !important; }
