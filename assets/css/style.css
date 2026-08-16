@@ -149,6 +149,7 @@ section { padding: 88px 0; }
 
 .section-head { max-width: 680px; margin-bottom: 48px; }
 .section-head.center { margin-inline: auto; text-align: center; }
+.section-head .lede { margin-top: 18px; }
 .eyebrow {
   display: inline-flex; align-items: center; gap: 8px;
   font-family: var(--font-heading); font-weight: 700; font-size: 0.8rem;
