@@ -209,6 +209,7 @@ section { padding: 88px 0; }
 
 /* ---------- Glass surfaces ---------- */
 .glass-card {
+  position: relative;
   background: var(--glass-light-bg);
   border: 1px solid var(--glass-light-border);
   backdrop-filter: blur(var(--glass-light-blur));
@@ -218,6 +219,33 @@ section { padding: 88px 0; }
   transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
 }
 .glass-card:hover { box-shadow: var(--shadow-md); }
+
+/* live green border: a light traveling continuously around every card's edge.
+   A real element (not a pseudo-element) so it never collides with the ::before/
+   ::after effects individual card variants already use. The ring itself never
+   moves -- only the gradient's angle animates -- so the highlight sweeps along
+   a fixed outline instead of the whole (non-square) ring spinning like a wheel. */
+@property --border-angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+@keyframes card-border-spin { to { --border-angle: 360deg; } }
+.live-border {
+  --border-angle: 0deg;
+  display: block;
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: conic-gradient(from var(--border-angle), transparent 0 70%, var(--green) 85%, var(--green-700) 92%, transparent 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 5;
+  animation: card-border-spin 3.5s linear infinite;
+}
 
 .glass-card-dark {
   background: var(--glass-dark-bg);
@@ -1062,21 +1090,6 @@ body.is-leaving { opacity: 0; }
   transform-style: preserve-3d;
   will-change: transform;
 }
-.glass-card.tilt-card::before {
-  content:"";
-  position:absolute;
-  inset:-1px;
-  border-radius:inherit;
-  padding:1px;
-  background:linear-gradient(125deg, transparent 20%, rgba(110,188,32,.55), rgba(255,255,255,.5), transparent 75%);
-  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
-  -webkit-mask-composite:xor;
-  mask-composite:exclude;
-  opacity:0;
-  transition:opacity 300ms ease;
-  pointer-events:none;
-  z-index:4;
-}
 .glass-card.tilt-card::after {
   content:"";
   position:absolute;
@@ -1088,9 +1101,8 @@ body.is-leaving { opacity: 0; }
   transition:opacity 260ms ease;
   z-index:0;
 }
-.glass-card.tilt-card:hover::before,
 .glass-card.tilt-card:hover::after { opacity:1; }
-.glass-card.tilt-card > * { position:relative; z-index:1; }
+.glass-card.tilt-card > *:not(.live-border) { position:relative; z-index:1; }
 .glass-card.tilt-card.reveal.is-visible,
 .glass-card.tilt-card:not(.reveal) {
   transform: perspective(1000px) rotateX(var(--rx)) rotateY(var(--ry)) translateY(var(--lift));
@@ -1313,4 +1325,5 @@ body.is-leaving { opacity: 0; }
   :root[data-theme="light"] .hero-visual .glass-card-dark { animation:none !important; }
   .reveal { opacity:1 !important; transform:none !important; filter:none !important; }
   .glass-card.tilt-card { transform:none !important; }
+  .live-border { animation:none !important; }
 }

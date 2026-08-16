@@ -237,6 +237,14 @@
     });
   });
 
+  /* ---------- Live animated border on every card ---------- */
+  document.querySelectorAll(".glass-card, .id-card").forEach(function (card) {
+    var glow = document.createElement("span");
+    glow.className = "live-border";
+    glow.setAttribute("aria-hidden", "true");
+    card.prepend(glow);
+  });
+
   /* portfolio-specific visual hooks */
   document.querySelectorAll("/portfolio/" === here ? ".glass-card.card" : "__none__").forEach(function (card) {
     card.classList.add("portfolio-card-live");
