@@ -1013,7 +1013,6 @@ body.is-leaving { opacity: 0; }
   filter: blur(3px);
 }
 :root[data-theme="light"] .hero-stats .stat {
-  border-color: rgba(76,138,22,.34);
   box-shadow: 0 12px 30px rgba(60,113,24,.12), inset 0 1px 0 rgba(255,255,255,.8);
 }
 :root[data-theme="light"] .hero-stats .stat::before {
