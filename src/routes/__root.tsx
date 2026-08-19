@@ -1,4 +1,5 @@
 import { createRootRoute, HeadContent, Outlet, Scripts } from "@tanstack/react-router";
+import { Analytics } from "@vercel/analytics/react";
 import { Toaster } from "sonner";
 import { SiteChrome } from "@/components/chrome";
 import { SiteFooter } from "@/components/site-footer";
@@ -57,6 +58,7 @@ function RootComponent() {
             <SiteFooter />
             <Toaster richColors position="top-center" />
         </ThemeProvider>
+        <Analytics />
         <Scripts />
       </body>
     </html>
