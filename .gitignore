@@ -2,3 +2,8 @@
 skills-lock.json
 Thumbs.db
 .DS_Store
+node_modules/
+dist/
+.output/
+.vercel/
+.vinxi/
