@@ -294,7 +294,7 @@ export const TEAM: Employee[] = [
     start: "April 1, 2024",
     photo: "/assets/images/team/bwalya-musonda-thumb.jpg",
     email: "bwalya.musonda@greenstonesolutions.net",
-    bio: "Bwalya Musonda is the founder and CEO of Greenstone Solutions LLC, a Texas-based consulting firm headquartered in Austin. With 14 years of experience across JavaScript/TypeScript, Web3, Python, Ruby, Java, PHP, C#, Go, and Rust, Bwalya specializes in software architecture, cloud architecture, blockchain integration, and cross-platform automation — bringing engineering-grade rigor to every client engagement. He leads company strategy, client relationships, and day-to-day operations.",
+    bio: "Bwalya Musonda is the founder and CEO of Greenstone Solutions LLC. With 14 years of experience across JavaScript/TypeScript, Web3, Python, Ruby, Java, PHP, C#, Go, and Rust, Bwalya specializes in software architecture, cloud architecture, blockchain integration, and cross-platform automation — bringing engineering-grade rigor to every client engagement. He leads company strategy, client relationships, and day-to-day operations.",
     skills: [
       { title: "Languages & Frameworks", tags: ["C#", ".NET", "ASP.NET Core", "TypeScript"] },
       { title: "Architecture", tags: ["Microservices", "Domain-Driven Design", "RESTful APIs"] },
@@ -346,7 +346,7 @@ export const TEAM: Employee[] = [
     photo: "/assets/images/team/fayed-al-fahad-thumb.jpg",
     email: "fayed.fahad@greenstonesolutions.net",
     linkedin: "https://www.linkedin.com/in/fayedalfahad/",
-    bio: "Fayed AL Fahad serves as Accountant at Greenstone Solutions LLC, supporting the company's financial operations, bookkeeping, and reporting remotely from Dhaka, Bangladesh since April 2024. Day to day, Fayed:",
+    bio: "Fayed AL Fahad serves as Accountant at Greenstone Solutions LLC, supporting the company's financial operations, bookkeeping, and reporting since April 2024. Day to day, Fayed:",
     bullets: [
       "Records and maintains accurate financial transactions in Wave Accounting in line with accounting best practices",
       "Handles full-cycle bookkeeping, including income, expenses, journal entries, and account classification",
@@ -354,7 +354,7 @@ export const TEAM: Employee[] = [
       "Manages invoicing and tracks receivables to ensure timely, accurate billing",
       "Performs bank reconciliations to keep statements and accounting records consistent",
       "Maintains organized, audit- and tax-ready documentation to support compliance",
-      "Collaborates remotely with leadership to provide financial insight into ongoing operations",
+      "Collaborates with leadership to provide financial insight into ongoing operations",
     ],
     skills: [
       { title: "Accounting & Bookkeeping", tags: ["Full-Cycle Bookkeeping", "Bank Reconciliation", "Financial Reporting", "Invoicing & Receivables"] },
@@ -399,7 +399,7 @@ export const TEAM: Employee[] = [
     start: "August 2026",
     photo: "/assets/images/team/james-christopher-woods.svg",
     email: "james.woods@greenstonesolutions.net",
-    bio: "James Christopher Woods is a Software Developer on the Greenstone Solutions engineering team. Working primarily from Frisco, Texas, he focuses on cloud infrastructure automation, configuration management, continuous integration, and reliable software delivery, with relocation possible as project needs evolve. He brings the technical education and professional experience required for the role, including hands-on work with PEGA, AWS, and Docker. Day to day, James:",
+    bio: "James Christopher Woods is a Software Developer on the Greenstone Solutions engineering team. He focuses on cloud infrastructure automation, configuration management, continuous integration, and reliable software delivery. He brings the technical education and professional experience required for the role, including hands-on work with PEGA, AWS, and Docker. Day to day, James:",
     bullets: [
       "Designs and automates cloud infrastructure services using Terraform",
       "Develops Ansible scripts for configuration management and repeatable software deployments",
