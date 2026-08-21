@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 560" role="img" aria-labelledby="title description">
+  <title id="title">James Christopher Woods</title>
+  <desc id="description">Greenstone Solutions initials avatar with the letters JW</desc>
+  <defs>
+    <linearGradient id="background" x1="56" y1="42" x2="506" y2="522" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#223321"/>
+      <stop offset="1" stop-color="#111713"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="82" y1="70" x2="482" y2="495" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9CDC4B"/>
+      <stop offset="1" stop-color="#5EAB18"/>
+    </linearGradient>
+  </defs>
+  <rect width="560" height="560" fill="url(#background)"/>
+  <circle cx="280" cy="280" r="252" fill="none" stroke="url(#ring)" stroke-width="10"/>
+  <circle cx="280" cy="280" r="225" fill="none" stroke="#9CDC4B" stroke-opacity=".08" stroke-width="2"/>
+  <text x="280" y="337" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="160" font-weight="700" letter-spacing="-8" text-anchor="middle">JW</text>
+</svg>
