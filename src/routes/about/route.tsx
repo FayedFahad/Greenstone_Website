@@ -33,7 +33,7 @@ const FOUNDER_MARKS = [
   "14 years in software",
   "AWS & Azure architect",
   "PMP · Security+ · ITIL",
-  "Austin HQ",
+  "Member-managed",
 ];
 
 function About() {
@@ -149,8 +149,7 @@ function About() {
                   Bwalya founded Greenstone Solutions in 2024 and still runs the work himself —
                   company strategy, client relationships, and day-to-day operations. With 14 years
                   across software architecture, cloud, and automation, he built a member-managed
-                  firm so clients get the people doing the work, not a handoff. The company is
-                  headquartered in Austin; Bwalya leads operations from Houston.
+                  firm so clients get the people doing the work, not a handoff.
                 </p>
                 <div className="leader-meta">
                   {FOUNDER_MARKS.map((mark) => (
