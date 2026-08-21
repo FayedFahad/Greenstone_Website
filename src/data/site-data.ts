@@ -413,7 +413,7 @@ export const TEAM: Employee[] = [
     start: "August 2026",
     photo: "/assets/images/team/james-christopher-woods.svg",
     email: "james.woods@greenstonesolutions.net",
-    bio: "James Christopher Woods is a Software Developer on the Greenstone Solutions engineering team. Working primarily from Frisco, Texas, he focuses on cloud infrastructure automation, configuration management, continuous integration, and reliable software delivery, with relocation possible as project needs evolve. He brings the technical education and professional experience required for the role, including hands-on work with PEGA, AWS, and Docker. Day to day, James:",
+    bio: "James Christopher Woods is a Software Developer on the Greenstone Solutions engineering team. He focuses on cloud infrastructure automation, configuration management, continuous integration, and reliable software delivery, with relocation possible as project needs evolve. He brings the technical education and professional experience required for the role, including hands-on work with PEGA, AWS, and Docker. Day to day, James:",
     bullets: [
       "Designs and automates cloud infrastructure services using Terraform",
       "Develops Ansible scripts for configuration management and repeatable software deployments",
