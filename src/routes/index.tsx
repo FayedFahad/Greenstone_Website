@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
   component: Home,
   head: () => ({
     meta: [
-      { title: "Greenstone Solutions | Business Consulting in Austin, TX" },
+      { title: "Greenstone Solutions" },
       {
         name: "description",
         content:
