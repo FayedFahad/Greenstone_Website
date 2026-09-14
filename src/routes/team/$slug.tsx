@@ -98,22 +98,28 @@ function Profile() {
                 </ul>
               ) : null}
 
-              <h3 className="mt-8 mb-3 text-xl">Contact</h3>
-              <div className="flex flex-wrap gap-3">
-                <a href={`mailto:${person.email}`} className="btn btn-ghost">
-                  <Mail size={16} /> {person.email}
-                </a>
-                {person.linkedin ? (
-                  <a
-                    href={person.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-ghost"
-                  >
-                    <Linkedin size={16} /> LinkedIn
-                  </a>
-                ) : null}
-              </div>
+              {person.email || person.linkedin ? (
+                <>
+                  <h3 className="mt-8 mb-3 text-xl">Contact</h3>
+                  <div className="flex flex-wrap gap-3">
+                    {person.email ? (
+                      <a href={`mailto:${person.email}`} className="btn btn-ghost">
+                        <Mail size={16} /> {person.email}
+                      </a>
+                    ) : null}
+                    {person.linkedin ? (
+                      <a
+                        href={person.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-ghost"
+                      >
+                        <Linkedin size={16} /> LinkedIn
+                      </a>
+                    ) : null}
+                  </div>
+                </>
+              ) : null}
 
               {person.placeholder ? (
                 <p className="placeholder-note">

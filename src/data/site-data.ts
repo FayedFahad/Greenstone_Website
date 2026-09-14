@@ -274,7 +274,7 @@ export type Employee = {
   id: string;
   start: string;
   photo: string;
-  email: string;
+  email?: string;
   linkedin?: string;
   bio: string;
   bullets?: string[];
@@ -414,6 +414,32 @@ export const TEAM: Employee[] = [
       { title: "Automation & Delivery", tags: ["Ansible", "Jenkins", "CI/CD", "Gherkin", "Cucumber"] },
       { title: "Languages & Configuration", tags: ["Java", "Python", "Shell", "C", "Groovy", "YAML", "XML"] },
       { title: "Platforms & Tooling", tags: ["PEGA", "Git", "TortoiseSVN", "Maven", "JDK", "Sterling", "TIBCO"] },
+    ],
+  },
+  {
+    slug: "carl-richardson",
+    name: "Carl Richardson",
+    first: "Carl",
+    role: "Senior Software Engineer",
+    department: "Engineering",
+    id: "GS-0006",
+    start: "September 1, 2026",
+    photo: "/assets/images/team/carl-richardson.svg",
+    bio: "Carl Richardson is a Senior Software Engineer on the Greenstone Solutions engineering team. With more than a decade of experience building full-stack, cloud-native software, he specializes in .NET platforms, modern web applications, microservices, data-intensive systems, and secure healthcare technology. His work combines scalable architecture with practical delivery across the full software lifecycle. Day to day, Carl:",
+    bullets: [
+      "Designs high-performance .NET and ASP.NET Web API services backed by SQL Server, PostgreSQL, MongoDB, and Cosmos DB",
+      "Builds modern web experiences with React, Next.js, TypeScript, Angular, and Vue.js",
+      "Develops event-driven microservices and real-time data workflows using Node.js, Python, Kafka, RabbitMQ, GraphQL, and SignalR",
+      "Architects and delivers cloud-native systems across Azure and AWS using Docker, Kubernetes, Terraform, and automated CI/CD pipelines",
+      "Creates secure healthcare solutions with FHIR integrations, OAuth 2.0, single sign-on, role-based access control, and HIPAA-aligned practices",
+      "Optimizes databases, APIs, ETL pipelines, and reporting systems for performance, reliability, and high-volume operations",
+      "Applies automated testing, observability, and deployment best practices to improve release quality and system resilience",
+    ],
+    skills: [
+      { title: "Backend Engineering", tags: ["C#", ".NET 8", "ASP.NET Core", "Web API", "Entity Framework", "Node.js", "Python"] },
+      { title: "Frontend Engineering", tags: ["React", "Next.js", "TypeScript", "Angular", "Vue.js", "Redux"] },
+      { title: "Cloud & DevOps", tags: ["Azure", "AWS", "Docker", "Kubernetes", "Terraform", "GitHub Actions"] },
+      { title: "Data & Integration", tags: ["SQL Server", "PostgreSQL", "MongoDB", "Cosmos DB", "Kafka", "RabbitMQ", "GraphQL", "FHIR"] },
     ],
   },
 ];
