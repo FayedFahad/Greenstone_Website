@@ -442,6 +442,33 @@ export const TEAM: Employee[] = [
       { title: "Data & Integration", tags: ["SQL Server", "PostgreSQL", "MongoDB", "Cosmos DB", "Kafka", "RabbitMQ", "GraphQL", "FHIR"] },
     ],
   },
+  {
+    slug: "jason-jolivette",
+    name: "Jason Jolivette",
+    first: "Jason",
+    role: "Senior Software Engineer",
+    department: "Engineering",
+    id: "GS-0007",
+    start: "September 1, 2026",
+    photo: "/assets/images/team/jason-jolivette.svg",
+    linkedin: "https://www.linkedin.com/in/jason-jolivette-3060baba",
+    bio: "Jason Jolivette is a Senior Software Engineer on the Greenstone Solutions engineering team. He brings extensive experience leading full-stack development, cloud architecture, enterprise modernization, and secure software delivery. His work combines hands-on engineering with technical mentorship, cross-functional leadership, and a strong focus on scalable systems that serve complex business needs. Day to day, Jason:",
+    bullets: [
+      "Architects and develops full-stack applications using Angular, TypeScript, C#, .NET Core, Node.js, React, and Vue.js",
+      "Designs secure RESTful APIs and microservices using domain-driven design, dependency injection, and modern integration patterns",
+      "Modernizes legacy platforms and migrates services to AWS using Lambda, ECS Fargate, S3, DynamoDB, and CloudFormation",
+      "Builds automated CI/CD workflows with GitHub Actions, AWS CodeBuild, Jenkins, Docker, and Git",
+      "Applies OWASP-aligned secure coding, vulnerability assessment, code review, and testing practices throughout the delivery lifecycle",
+      "Optimizes relational and NoSQL data systems including MySQL, PostgreSQL, Redis, MongoDB, and DynamoDB",
+      "Mentors engineers, establishes development standards, and guides Agile teams toward reliable, maintainable releases",
+    ],
+    skills: [
+      { title: "Application Engineering", tags: ["C#", ".NET Core", "Angular", "TypeScript", "React", "Vue.js", "Node.js"] },
+      { title: "Cloud & DevOps", tags: ["AWS", "ECS Fargate", "Lambda", "S3", "CloudFormation", "Docker", "CI/CD"] },
+      { title: "Architecture & Security", tags: ["Microservices", "REST APIs", "Domain-Driven Design", "OWASP", "Secure Coding", "Code Review"] },
+      { title: "Data & Leadership", tags: ["MySQL", "PostgreSQL", "DynamoDB", "MongoDB", "Redis", "Technical Mentoring", "Agile"] },
+    ],
+  },
 ];
 
 export function getEmployee(slug: string) {
